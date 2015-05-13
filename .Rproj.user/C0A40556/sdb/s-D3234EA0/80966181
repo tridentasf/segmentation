@@ -1,0 +1,16 @@
+{
+    "contents" : "getSegment <- function(answers) {\n  load(\"data/segment_fit.rda\")\n  pred <- predict(segment_fit, newdata=answers, type=\"class\")\n  \n  return(pred)\n}\n\ngetSegment2 <- function(answers) {\n  load(\"../data/segment_fit.rda\")\n  pred <- predict(segment_fit, newdata=answers, type=\"class\")\n  \n  return(pred)\n}\n\ngetSegment3 <- function(answers) {\n  load(\"../segment_fit.rda\")\n  pred <- predict(segment_fit, newdata=answers, type=\"class\")\n  \n  return(pred)\n}",
+    "created" : 1431540379879.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "394471202",
+    "id" : "80966181",
+    "lastKnownWriteTime" : 1431550258,
+    "path" : "~/segmentation/R/segmentation.R",
+    "project_path" : "R/segmentation.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
