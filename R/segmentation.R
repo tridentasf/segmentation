@@ -18,3 +18,10 @@ getSegment3 <- function(answers) {
   
   return(pred)
 }
+
+getSegment4 <- function(answers) {
+  load("segment_fit.rda")
+  pred <- predict(segment_fit, newdata=answers, type="class")
+  
+  return(pred)
+}
